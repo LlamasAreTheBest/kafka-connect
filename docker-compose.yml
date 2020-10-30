@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+    connect1:
+        image: maltepfennig/kafka-connect
+        container_name: kafka_connect1
+        ports:
+            - "34001:8083"
+        environment: 
+            KAFKA_BOOTSTRAP_SERVERS: Malte-Thinkpad:33001,Malte-Thinkpad:33002,Malte-Thinkpad:33003
+            KAFKA_GROUP_ID: connect-cluster-A
+            KAFKA_PLUGIN_PATH: /opt/connectors
+            KAFKA_STATUS_STORAGE_PARTITIONS: 2
+            KAFKA_STATUS_STORAGE_REPLICATION_FACTOR: 3
+        volumes: 
+            - .\connectors:/opt/connectors:ro

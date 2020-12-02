@@ -9,11 +9,6 @@
 *** To avoid retyping too much info. Do a search and replace for the following:
 *** github_username, repo_name, twitter_handle, email
 -->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -22,9 +17,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
 <!-- PROJECT LOGO -->
-<br />
 <p align="center">
 <!--
   <a href="https://github.com/LlamasAreTheBest/kafka-connect">
@@ -34,7 +27,7 @@
   <h2>Kafka Connect for Docker</h2>
 
   <p>
-    Kafka Connect for Docker. This image is based on <a href="https://github.com/wurstmeister/kafka-docker">wurstmeister/kafka</a>. 
+    Kafka Connect for Docker. This image is based on <a href="https://github.com/wurstmeister/kafka-docker">wurstmeister/kafka</a>. <br /> Get the Docker images with:
     <ul>
     <li>llamasarethebest/kafka-connect:amd64-snapshot</li>
     <li>llamsarethebest/kafka-connect:arm64-snapshot</li>

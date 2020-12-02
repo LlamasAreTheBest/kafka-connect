@@ -31,23 +31,14 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80"> 
   </a>
 -->
-  <h3 align="center">Kafka Connect for Docker</h3>
+  <h2>Kafka Connect for Docker</h2>
 
-  <p align="center">
+  <p>
     Kafka Connect for Docker. This image is based on <a href="https://github.com/wurstmeister/kafka-docker">wurstmeister/kafka</a>. 
     <ul>
     <li>llamasarethebest/kafka-connect:amd64-snapshot</li>
     <li>llamsarethebest/kafka-connect:arm64-snapshot</li>
     </ul>
-    <br />
-    <a href="https://github.com/LlamasAreTheBest/kafka-connect"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/LlamasAreTheBest/kafka-connect">View Demo</a>
-    ·
-    <a href="https://github.com/LlamasAreTheBest/kafka-connect/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/LlamasAreTheBest/kafka-connect/issues">Request Feature</a>
   </p>
 </p>
 

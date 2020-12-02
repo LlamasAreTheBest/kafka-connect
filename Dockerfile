@@ -2,7 +2,7 @@
 FROM openjdk:8u212-jre-alpine
 
 # for arm64
-#FROM openjdk:8u201-jdk-alpine 
+#FROM arm64v8/openjdk:8u201-jdk-alpine 
 
 ARG kafka_version=2.6.0
 ARG scala_version=2.13

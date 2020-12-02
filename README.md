@@ -73,40 +73,52 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This Projekt started due to the need of an MQTT-Connector for Kafka. (This will be avalible soon on my GitHubPage). 
+Some Files based on the image from [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker). 
 
-Testesd on two System Raspberry Pi and Windows machine, checkout the different tags
-
+I build the kafka-connect image on two systems, checkout the tags to get the architecture you need.
 
 ### Built With
 
-* [Raspberry Pi 4B - 4GB](arm64)
-* [Windows 10](amd64)
-
-
+* arm64 - Raspberry Pi 4B - 4GB - Ubuntu focal
+* amd64 - Windows 10
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Help to fill this part :)
+First you need Docker ;) You can finde an installation guide online: [Install Docker](https://docs.docker.com/get-docker/)
 
-### Prerequisites
+### Docker run
 
-You need Docker
+
 
 ### Docker compose
+
+If you use Docker compose create a File *docker-compose.yml*. You can copy the file below or check out the *[docker-compose.yml](https://github.com/LlamasAreTheBest/kafka-connect/blob/main/docker-compose.yml)* File in this repository. You definetly need __KAFKA_BOOTSTRAP_SERVERS__  and __KAFKA_GROUP_ID__ as environment varibles.
+
+To configure the *connect-distributed.properties* you can create enviroment varibles. Use **KAFKA_** as prefix and add the desired value in __Kapital Latters__. In Example:
+```
+KAFKA_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
+```
+will result the following output in the *connect-distributed.properties*-File:
+```
+key.converter=org.apache.kafka.connect.storage.StringConverter
+```
+
+To add your own Kafka Connectors collect them in a folder and mount it. Make sure that the __KAFKA_PLUGIN_PATH__ matches the mounted volumes. 
 
 ```sh
 version: '3'
 
 services: 
     connect1:
-        image: maltepfennig/kafka-connect
+        image: maltepfennig/kafka-connect:SNAPSHOT
         container_name: kafka_connect1
         ports:
             - "8083:8083"
         environment: 
-            KAFKA_BOOTSTRAP_SERVERS: <ip-address>:<port>,<ip-address2>:<port2>
+            KAFKA_BOOTSTRAP_SERVERS: <ip-address>:<port>,<ip-address2>:<port2>,<...
             KAFKA_GROUP_ID: connect-cluster
             KAFKA_PLUGIN_PATH: /opt/connectors
             KAFKA_STATUS_STORAGE_PARTITIONS: 2
@@ -114,7 +126,6 @@ services:
         volumes: 
             - .\connectors:/opt/connectors:ro
 ```
-
 
 
 <!-- CONTRIBUTING -->

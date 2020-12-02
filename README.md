@@ -35,6 +35,13 @@
 
   <p align="center">
     Kafka Connect for Docker. This image is based on <a href="https://github.com/wurstmeister/kafka-docker">wurstmeister/kafka</a>.
+
+    Get the Docker image with
+
+    <br />
+    llamasarethebest/kafka-connect:amd64-snapshot
+    <br />
+    llamasarethebest/kafka-connect:arm64-snapshot
     <br />
     <a href="https://github.com/LlamasAreTheBest/kafka-connect"><strong>Explore the docs »</strong></a>
     <br />

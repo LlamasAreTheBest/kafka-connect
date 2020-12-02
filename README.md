@@ -25,18 +25,20 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][https://github.com/LlamasAreTheBest/kafka-connect/issues]
-[![Apache License 2.0][license-shield]][https://choosealicense.com/licenses/apache-2.0/]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
+<!--
   <a href="https://github.com/LlamasAreTheBest/kafka-connect">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80"> 
   </a>
-
+-->
   <h3 align="center">Kafka Connect for Docker</h3>
 
   <p align="center">
@@ -62,18 +64,15 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+  * [Docker compose](#installation)
 * [Contributing](#contributing)
 * [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Testesd on two System Raspberry Pi and Windows machine, checkout the different tags
 
@@ -95,7 +94,7 @@ Help to fill this part :)
 
 You need Docker
 
-### Docker-compose
+### Docker compose
 
 ```sh
 version: '3'
@@ -118,9 +117,6 @@ services:
 
 
 
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -133,30 +129,10 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the Apache License 2.0. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - malte.pfennig@smail.emt.h-brs.de
-
-Project Link: [https://github.com/LlamasAreTheBest/MQTT-Connector-for-Kafka](https://github.com/LlamasAreTheBest/MQTT-Connector-for-Kafka)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
 
 
 
@@ -173,6 +149,4 @@ Project Link: [https://github.com/LlamasAreTheBest/MQTT-Connector-for-Kafka](htt
 [issues-url]: https://github.com/LlamasAreTheBest/repo/issues
 [license-shield]: https://img.shields.io/github/license/LlamasAreTheBest/repo.svg?style=flat-square
 [license-url]: https://github.com/LlamasAreTheBest/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/LlamasAreTheBest
 [product-screenshot]: images/screenshot.png

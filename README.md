@@ -41,10 +41,10 @@
     <li>llamasarethebest/kafka-connect:amd64-snapshot<li>
     <li>llamasarethebest/kafka-connect:arm64-snapshot<li>
     <ul>
-    <br />
+
+    
     <a href="https://github.com/LlamasAreTheBest/kafka-connect"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    
     <a href="https://github.com/LlamasAreTheBest/kafka-connect">View Demo</a>
     ·
     <a href="https://github.com/LlamasAreTheBest/kafka-connect/issues">Report Bug</a>

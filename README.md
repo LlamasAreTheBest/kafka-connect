@@ -34,7 +34,7 @@
   <h3 align="center">Kafka Connect for Docker</h3>
 
   <p align="center">
-    Start Kafka Connect via Docker image. This image is based on wurstmeister/kafka.
+    Kafka Connect for Docker. This image is based on [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker).
     <br />
     <a href="https://github.com/LlamasAreTheBest/kafka-connect"><strong>Explore the docs »</strong></a>
     <br />

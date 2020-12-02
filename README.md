@@ -139,14 +139,14 @@ Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/LlamasAreTheBest/repo.svg?style=flat-square
-[contributors-url]: https://github.com/LlamasAreTheBest/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LlamasAreTheBest/repo.svg?style=flat-square
-[forks-url]: https://github.com/LlamasAreTheBest/repo/network/members
+[contributors-shield]: https://img.shields.io/github/contributors/LlamasAreTheBest/kafka-connect.svg?style=flat-square
+[contributors-url]: https://github.com/LlamasAreTheBest/kafka-connect/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LlamasAreTheBest/kafka-connect.svg?style=flat-square
+[forks-url]: https://github.com/LlamasAreTheBest/kafka-connect/network/members
 [stars-shield]: https://img.shields.io/github/stars/LlamasAreTheBest/repo.svg?style=flat-square
-[stars-url]: https://github.com/LlamasAreTheBest/repo/stargazers
+[stars-url]: https://github.com/LlamasAreTheBest/kafka-connect/stargazers
 [issues-shield]: https://img.shields.io/github/issues/LlamasAreTheBest/repo.svg?style=flat-square
-[issues-url]: https://github.com/LlamasAreTheBest/repo/issues
+[issues-url]: https://github.com/LlamasAreTheBest/kafka-connect/issues
 [license-shield]: https://img.shields.io/github/license/LlamasAreTheBest/repo.svg?style=flat-square
-[license-url]: https://github.com/LlamasAreTheBest/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/LlamasAreTheBest/kafka-connect/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png

@@ -26,8 +26,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Apache License 2.0][license-shield]][license-url]
-
+[![GitHub license](https://img.shields.io/hexpm/l/kafka-connect)](https://github.com/LlamasAreTheBest/kafka-connect/blob/main/LICENSE)
 
 
 
@@ -128,9 +127,9 @@ services:
 
 ### Docker run
 
-To make it simple, create an *conf.env*-File an attach it to the docker run command. To find more commands for the file checkout [Docker compose](#docker-compose).
+To make it simple, create an *conf.env*-File an attach it to the docker run command. In the file you definetly need __KAFKA_BOOTSTRAP_SERVERS__  and __KAFKA_GROUP_ID__ as environment varibles. To find more commands for the file checkout [Docker compose](#docker-compose).
 
-Example of *conf.env* jfile:
+Example of *[conf.env](https://github.com/LlamasAreTheBest/kafka-connect/blob/main/conf.env)* file:
 ```
 KAFKA_BOOTSTRAP_SERVERS=<ip-address1>:<port1>,<ip-address2>:<port2>,...
 KAFKA_GROUP_ID=connect-cluster

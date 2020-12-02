@@ -132,7 +132,7 @@ KAFKA_PLUGIN_PATH=/opt/connectors
 To attach Kafka Connectors mount a volume with all desired connectors inside. Make sure the destination volume matches with the __KAFKA_PLUGIN_PATH__ in the *conf.env* file.
 
 ```
-docker run -p 8083:8083 --volume /home/pi/kafka-connect/connectors:/opt/connectors:ro --env-file conf.env maltepfennig/kafka-connect:arm64_snapshot
+docker run -p 8083:8083 --volume /home/pi/kafka-connect/connectors:/opt/connectors:ro --env-file conf.env llamasarethebest/kafka-connect:arm64_snapshot
 ```
 
 

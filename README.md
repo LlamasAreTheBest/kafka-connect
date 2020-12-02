@@ -84,9 +84,9 @@ To add your own Kafka Connectors collect them in a folder and mount it. Make sur
 version: '3'
 
 services: 
-    connect1:
-        image: maltepfennig/kafka-connect:SNAPSHOT
-        container_name: kafka_connect1
+    connect:
+        image: llamasarethebest/kafka-connect:amd64-snapshot
+        container_name: kafka-connect
         ports:
             - "8083:8083"
         environment: 

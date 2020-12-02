@@ -11,7 +11,7 @@ fi
 
 echo $KAFKA_BOOTSTRAP_SERVERS
 
-#Issue newline to config file in case there is not one already
+#Issue newline to config file, in case there is not one already
 echo "" >> "$KAFKA_HOME/config/connect-distributed.properties"
 
 (

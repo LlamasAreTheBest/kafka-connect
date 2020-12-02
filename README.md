@@ -143,10 +143,10 @@ Distributed under the Apache License 2.0. See `LICENSE` for more information.
 [contributors-url]: https://github.com/LlamasAreTheBest/kafka-connect/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/LlamasAreTheBest/kafka-connect.svg?style=flat-square
 [forks-url]: https://github.com/LlamasAreTheBest/kafka-connect/network/members
-[stars-shield]: https://img.shields.io/github/stars/LlamasAreTheBest/repo.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/LlamasAreTheBest/kafka-connect.svg?style=flat-square
 [stars-url]: https://github.com/LlamasAreTheBest/kafka-connect/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LlamasAreTheBest/repo.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/LlamasAreTheBest/kafka-connect.svg?style=flat-square
 [issues-url]: https://github.com/LlamasAreTheBest/kafka-connect/issues
-[license-shield]: https://img.shields.io/github/license/LlamasAreTheBest/repo.svg?style=flat-square
-[license-url]: https://github.com/LlamasAreTheBest/kafka-connect/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/LlamasAreTheBest/kafka-connect.svg?style=flat-square
+[license-url]: https://github.com/LlamasAreTheBest/kafka-connect/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png

@@ -63,8 +63,8 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Docker compose](#installation)
+  * [Docker compose](#docker-compose)
+  * [Docker run](#docker-run)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -76,7 +76,7 @@
 This Projekt started due to the need of an MQTT-Connector for Kafka. (This will be avalible soon on my GitHubPage). 
 Some Files based on the image from [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker). 
 
-I build the kafka-connect image on two systems, checkout the tags to get the architecture you need.
+I build the kafka-connect image on two systems, checkout the tags to get the architecture you need, [here!](https://hub.docker.com/repository/docker/maltepfennig/kafka-connect/tags?page=1&ordering=last_updated)
 
 ### Built With
 
@@ -89,24 +89,22 @@ I build the kafka-connect image on two systems, checkout the tags to get the arc
 
 First you need Docker ;) You can finde an installation guide online: [Install Docker](https://docs.docker.com/get-docker/)
 
-### Docker run
-
 
 
 ### Docker compose
 
-If you use Docker compose create a File *docker-compose.yml*. You can copy the file below or check out the *[docker-compose.yml](https://github.com/LlamasAreTheBest/kafka-connect/blob/main/docker-compose.yml)* File in this repository. You definetly need __KAFKA_BOOTSTRAP_SERVERS__  and __KAFKA_GROUP_ID__ as environment varibles.
+If you use Docker compose create a file *docker-compose.yml*. You can copy the file below or check out the *[docker-compose.yml](https://github.com/LlamasAreTheBest/kafka-connect/blob/main/docker-compose.yml)* file in this repository. You definetly need __KAFKA_BOOTSTRAP_SERVERS__  and __KAFKA_GROUP_ID__ as environment varibles.
 
 To configure the *connect-distributed.properties* you can create enviroment varibles. Use **KAFKA_** as prefix and add the desired value in __Kapital Latters__. In Example:
 ```
 KAFKA_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
 ```
-will result the following output in the *connect-distributed.properties*-File:
+will result the following output in the *connect-distributed.properties* file:
 ```
 key.converter=org.apache.kafka.connect.storage.StringConverter
 ```
 
-To add your own Kafka Connectors collect them in a folder and mount it. Make sure that the __KAFKA_PLUGIN_PATH__ matches the mounted volumes. 
+To add your own Kafka Connectors collect them in a folder and mount it. Make sure that the __KAFKA_PLUGIN_PATH__ matches the destination folder of the mounted volume.
 
 ```sh
 version: '3'
@@ -125,6 +123,24 @@ services:
             KAFKA_STATUS_STORAGE_REPLICATION_FACTOR: 3
         volumes: 
             - .\connectors:/opt/connectors:ro
+```
+
+
+### Docker run
+
+To make it simple, create an *conf.env*-File an attach it to the docker run command. To find more commands for the file checkout [Docker compose](#docker-compose).
+
+Example of *conf.env* jfile:
+```
+KAFKA_BOOTSTRAP_SERVERS=<ip-address1>:<port1>,<ip-address2>:<port2>,...
+KAFKA_GROUP_ID=connect-cluster
+KAFKA_PLUGIN_PATH=/opt/connectors
+```
+
+To attach Kafka Connectors mount a volume with all desired connectors inside. Make sure the destination volume matches with the __KAFKA_PLUGIN_PATH__ in the *conf.env* file.
+
+```
+docker run -p 8083:8083 --volume /home/pi/kafka-connect/connectors:/opt/connectors:ro --env-file conf.env maltepfennig/kafka-connect:arm64_snapshot
 ```
 
 

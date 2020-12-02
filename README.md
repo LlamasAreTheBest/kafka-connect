@@ -66,9 +66,9 @@
 ## About The Project
 
 This Projekt started due to the need of an MQTT-Connector for Kafka. (This will be avalible soon on my GitHubPage). 
-Some Files based on the image from [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker). 
+Some files are based on the image from [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker). 
 
-I build the kafka-connect image on two systems, checkout the tags to get the architecture you need, [here!](https://hub.docker.com/repository/docker/maltepfennig/kafka-connect/tags?page=1&ordering=last_updated)
+I build the kafka-connect image on two systems. Checkout the tags to get the architecture you need, [here!](https://hub.docker.com/repository/docker/maltepfennig/kafka-connect/tags?page=1&ordering=last_updated)
 
 ### Built With
 

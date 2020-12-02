@@ -17,23 +17,17 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!-- PROJECT LOGO -->
-<p align="center">
-<!--
-  <a href="https://github.com/LlamasAreTheBest/kafka-connect">
-    <img src="images/logo.png" alt="Logo" width="80" height="80"> 
-  </a>
--->
-  <h2>Kafka Connect for Docker</h2>
+#Kafka Connect for Docker
 
-  <p>
-    Kafka Connect for Docker. This image is based on <a href="https://github.com/wurstmeister/kafka-docker">wurstmeister/kafka</a>. <br /> Get the Docker images with:
-    <ul>
-    <li>llamasarethebest/kafka-connect:amd64-snapshot</li>
-    <li>llamsarethebest/kafka-connect:arm64-snapshot</li>
-    </ul>
-  </p>
-</p>
+Kafka Connect for Docker. This image is based on [wurstmeister/kafa](https://github.com/wurstmeister/kafka-docker).
+
+Get the Docker images with:
+
+```
+docker pull llamasarethebest/kafka-connect:amd64-snapshot
+
+docker pull llamasarethebest/kafka-connect:arm64-snapshot
+```
 
 
 

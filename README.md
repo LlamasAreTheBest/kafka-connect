@@ -17,7 +17,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-#Kafka Connect for Docker
+##Kafka Connect for Docker
 
 Kafka Connect for Docker. This image is based on [wurstmeister/kafa](https://github.com/wurstmeister/kafka-docker).
 

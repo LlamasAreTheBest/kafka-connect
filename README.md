@@ -19,7 +19,7 @@
 -->
 # Kafka Connect for Docker
 
-Kafka Connect for Docker. This image is based on [wurstmeister/kafa](https://github.com/wurstmeister/kafka-docker).
+Kafka Connect for Docker. This image is based on [wurstmeister/kafka](https://github.com/wurstmeister/kafka-docker).
 
 Get the Docker images with:
 
